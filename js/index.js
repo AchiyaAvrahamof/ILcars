@@ -23,7 +23,8 @@ function checkInfo(carNum) {
             .then((res) => res.json()).
             then((carInfo) => {
                 console.log(carInfo);
-                document.getElementById('divi').innerHTML = `done
+                document.getElementById('divi').innerHTML += `done
+                ${carInfo}
                     `
             })
             .catch((e) => console.log(e));
