@@ -24,6 +24,7 @@ function checkInfo(carNum) {
             then((carInfo) => {
                 console.log(carInfo);
                 document.getElementById('divi').innerHTML += `done
+                car num ${carNum}
                 ${carInfo.result.fields[1].info.label}
                     `
             })
