@@ -8,13 +8,18 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="icon" type="image/x-icon" href="img/logo.png">
+    <link rel="icon" type="image/x-icon" href="img/find.png">
     <link rel="stylesheet" href="index.css">
+
     <title>IL Car</title>
 </head>
 
 <body>
+    <script src="js/index.js"></script>
     <!-- <script>
         // https://data.gov.il/he/api/3/action/datastore_search?resource_id=be5b7935-3922-45d4-9638-08871b17ec95&limit=5&q=title:jones
     </script> -->
@@ -48,13 +53,17 @@
 
 
 
-    <div class="container" dir="rtl">
+    <div class="container" dir="rtl" id="divi">
         <h1 class=" shadow lineText center">ברוכים הבאים לאתר למציאת המידע על הרכב</h1>
 
         <div>
             <input name="carId" type="number" maxlength="8" class="licensePlate"
                 oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" />
-            <button type="button" class="btn btn-warning">בדיקת מידע</button>
+            <button type="button" class="btn btn-warning" onclick="checkInfo(this.value)"><i
+                    class="fa-sharp fa-solid fa-magnifying-glass">חפש מידע על
+                    הרכב</i></button>
+
+
         </div>
 
     </div>
