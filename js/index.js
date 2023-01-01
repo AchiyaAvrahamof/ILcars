@@ -19,7 +19,7 @@ function checkInfo(carNum) {
     // let carNum = document.getElementById('carId').value;
     console.log(carNum);
     try {
-        fetch("https://data.gov.il/api/3/action/datastore_search?resource_id=053cea08-09bc-40ec-8f7a-156f0677aff3&q=" + carNum)
+        fetch("https://data.gov.il/api/3/action/datastore_search?resource_id=053cea08-09bc-40ec-8f7a-156f0677aff3&q=8266376")
             .then((res) => res.json()).
             then((carInfo) => {
                 console.log(carInfo);
