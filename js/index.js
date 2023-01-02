@@ -25,7 +25,7 @@
 async function checkInfo() {
     let carNum = document.getElementById('carId').value;
     console.log(carNum);
-    let urlToCheck = `http://data.gov.il/he/api/3/action/datastore_search?resource_id=053cea08-09bc-40ec-8f7a-156f0677aff3&limit=5&q=${carNum}`;
+    let urlToCheck = `http://data.gov.il/api/3/action/datastore_search?resource_id=053cea08-09bc-40ec-8f7a-156f0677aff3&limit=5&q=${carNum}`;
 
     try {
         let res = await axios.get(urlToCheck, { headers: { 'Access-Control-Allow-Origin': true } });
