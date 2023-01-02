@@ -9,6 +9,18 @@
   box-sizing: border-box;
 }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 .licensePlate {
   background: url(img/formPlate.png) no-repeat scroll 7px 7px;
   padding: 6px;
@@ -29,12 +41,6 @@
 
 .serch {
   background: url(img/find.png) no-repeat scroll 7px 7px;
-}
-
-body {
-  background-color: #cbb2ff;
-  opacity: 0.9;
-  width: 100vw;
 }
 
 .nav-link:hover {
